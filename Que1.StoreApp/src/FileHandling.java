@@ -33,15 +33,15 @@ public class FileHandling {
 			ex.printStackTrace();
 		}
 
-		// Sorting by Name (ItemCode)
-		Collections.sort(ListMerchandize, (o1, o2) -> o1.getItemCode().compareTo(o2.getItemCode()));
+		// Sorting by Name as per there item code
+		Collections.sort(ListMerchandize, (m1, m2) -> m1.getItemCode().compareTo(m2.getItemCode()));
 		ListMerchandize.forEach((Item) -> System.out.println(Item));
 		
 		System.out.println("-------------------------------------------------------------------------");
 		System.out.println("-------------------------------------------------------------------------");
 		
-		//Sorting by Price
-		Collections.sort(ListMerchandize, (o1, o2) -> o2.getUnitPrice().compareTo(o1.getUnitPrice()));
+		//Sorting by Price as per price
+		Collections.sort(ListMerchandize, (m1, m2) -> m2.getUnitPrice().compareTo(m1.getUnitPrice()));
 		ListMerchandize.forEach((Item) -> System.out.println(Item));
 		
 
